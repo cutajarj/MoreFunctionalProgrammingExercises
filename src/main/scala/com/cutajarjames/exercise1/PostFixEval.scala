@@ -20,18 +20,7 @@ class PostFixEval {
     */
 
   def evaluate(postFix:List[String]): Double = {
-    val nstk = postFix.foldLeft(List[Double]()) { (nStack, token) =>
-      (nStack, token) match {
-        case (a :: b :: t, "+") => (b + a) +: t
-        case (a :: b :: t, "*") => (b * a) +: t
-        case (a :: b :: t, "/") => (b / a) +: t
-        case (a :: b :: t, "-") => (b - a) +: t
-        case (_, n) => n.toDouble +: nStack
-      }
-    }
-    nstk.head
+    -1.0
   }
-  //evaluate(List("2", "3", "+"))
-  //evaluate(List("5", "2", "3", "-", "*"))
 
 }
