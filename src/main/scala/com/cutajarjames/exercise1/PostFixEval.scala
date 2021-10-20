@@ -16,7 +16,7 @@ class PostFixEval {
     *
     * Examples:
     *   evaluate(List("2", "3", "+")) should return 5
-    *   evaluate(List("5", "2", "3", "+", "*")) should return -5
+    *   evaluate(List("5", "2", "3", "-", "*")) should return -5
     */
 
   def evaluate(postFix:List[String]): Double = {
